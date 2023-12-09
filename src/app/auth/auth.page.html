@@ -13,8 +13,9 @@
           <ion-label position="floating">Ingresa tu contraseña</ion-label>
           <ion-input type="password" required></ion-input>
         </ion-item>
-        <ion-button routerLink="home" expand="full" class="login-button">Acceder</ion-button>
       </form>
+      <ion-button routerLink="home" (click)="irAOtraPagina()" expand="full" class="login-button">Acceder</ion-button>
+
     </div>
     <div class="additional-options">
       <div>¿Olvidaste tu contraseña? ¿No tienes una cuenta?</div>

@@ -1,13 +1,57 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Clases
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/perfil">Perfil</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <!-- Sección para agregar una nueva clase -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Agregar Nueva Clase</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Día</ion-label>
+        <ion-input ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-input ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Hora</ion-label>
+        <ion-input ></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" >Agregar Clase</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Sección para mostrar la lista de clases -->
+  <ion-card >
+    <ion-card-header>
+      <ion-card-title>Lista de Clases</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item >
+          <ion-label>Clase lunes 07/11/2023 13:15</ion-label>
+
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
